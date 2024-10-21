@@ -1,16 +1,12 @@
 console.log("Welcome to RPS game!")
 
 let getHumanChoice = prompt("Please choose [Rock, Paper or Scissors]");
-console.log(getHumanChoice);
+    console.log("You chose: " + getHumanChoice);
 
 const getComputerChoice = ["Rock", "Paper", "Scissors"];
 const randomIndex = Math.floor(Math.random() * getComputerChoice.length);
 const computerChoice = getComputerChoice[randomIndex];
-
-console.log(getComputerChoice[randomIndex]);
-
-console.log("You chose: " + getHumanChoice);
-console.log("Computer chose: " + getComputerChoice[randomIndex]);
+    console.log("Computer chose: " + computerChoice);
 
 if (getHumanChoice === computerChoice) {
     console.log("It's a tie!");
